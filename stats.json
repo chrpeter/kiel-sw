@@ -1,49 +1,57 @@
 {
   "assetsByChunkName": {
     "component---src-pages-speakers-js": [
-      "component---src-pages-speakers-js-77756da2c7bf5420e6e2.js",
-      "component---src-pages-speakers-js-77756da2c7bf5420e6e2.js.map"
+      "component---src-pages-speakers-js-1f8a6ce0c8ace5811354.js",
+      "component---src-pages-speakers-js-1f8a6ce0c8ace5811354.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-946c25caa087ae698ce9.js",
-      "component---src-pages-index-js-946c25caa087ae698ce9.js.map"
+      "component---src-pages-index-js-82407758f6c9f48137c4.js",
+      "component---src-pages-index-js-82407758f6c9f48137c4.js.map"
     ],
     "component---src-pages-schedule-js": [
-      "component---src-pages-schedule-js-07b24ff290d66a63bba2.js",
-      "component---src-pages-schedule-js-07b24ff290d66a63bba2.js.map"
+      "component---src-pages-schedule-js-5160e1fdea24fb64055c.js",
+      "component---src-pages-schedule-js-5160e1fdea24fb64055c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-746987accc3234ab0dd1.js",
-      "component---src-layouts-index-js-746987accc3234ab0dd1.js.map"
+      "component---src-layouts-index-js-419dc2bdc48b9dfdff42.js",
+      "component---src-layouts-index-js-419dc2bdc48b9dfdff42.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-e3aa14d06df2346e80e6.js",
-      "component---src-pages-404-js-e3aa14d06df2346e80e6.js.map"
+      "component---src-pages-404-js-ebb27d8212561ebb92e8.js",
+      "component---src-pages-404-js-ebb27d8212561ebb92e8.js.map"
     ],
     "commons": [
-      "commons-480ab81d4c9d9b68eedb.js",
-      "commons-480ab81d4c9d9b68eedb.js.map"
+      "commons-9b34c07374b4a0f9eee8.js",
+      "commons-9b34c07374b4a0f9eee8.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---speakers": [
       "path---speakers-a0e39f21c11f6a62c5ab.js",
       "path---speakers-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-d958b7dcf70173637224.js",
+      "app-33e51007073fca825bd1.js",
       "build-js-styles.css",
-      "app-d958b7dcf70173637224.js.map",
+      "app-33e51007073fca825bd1.js.map",
       "build-js-styles.css.map"
     ],
     "path---schedule": [
