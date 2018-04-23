@@ -8,7 +8,7 @@ module.exports = {
       options: {
         name: "kiel.knowit.no",
         short_name: "Kiel",
-        start_url: "/",
+        start_url: "/kiel-sw",
         background_color: "#f7f0eb",
         theme_color: "#a2466c",
         display: "minimal-ui",
@@ -25,5 +25,5 @@ module.exports = {
     `gatsby-plugin-offline`,
     'gatsby-plugin-react-helmet',
   ],
-  pathPrefix: '/'
+  pathPrefix: '/kiel-sw'
 };
