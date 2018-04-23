@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/kiel-sw/app-33e51007073fca825bd1.js","bfc28c850ecc4e989688b37c5f2d8514"],["/kiel-sw/app-4fa1e03777493bc485c2.js","f3ccf91ae6637dcf4e1036b8676e22cc"],["/kiel-sw/app-a95225e1d03708a35d10.js","08f1e9b5a76a31b3eb79a59da0264758"],["/kiel-sw/commons-4460e6c24ba410066a49.js","cc5eaf12261eed08cf21131d0c02d263"],["/kiel-sw/commons-480ab81d4c9d9b68eedb.js","4ad6d9951a451a963b28665ff4a2771f"],["/kiel-sw/commons-9b34c07374b4a0f9eee8.js","106320e7e06150a023376e38638ffbfc"],["/kiel-sw/index.html","2da1b4c1c07b324ca4042d0f3201ee02"],["/kiel-sw/offline-plugin-app-shell-fallback/index.html","ee1488f047cc1b31152eccfaecd8a0c9"]];
+var precacheConfig = [["/kiel-sw/app-33e51007073fca825bd1.js","bfc28c850ecc4e989688b37c5f2d8514"],["/kiel-sw/app-4fa1e03777493bc485c2.js","f3ccf91ae6637dcf4e1036b8676e22cc"],["/kiel-sw/app-a95225e1d03708a35d10.js","08f1e9b5a76a31b3eb79a59da0264758"],["/kiel-sw/commons-4460e6c24ba410066a49.js","cc5eaf12261eed08cf21131d0c02d263"],["/kiel-sw/commons-480ab81d4c9d9b68eedb.js","4ad6d9951a451a963b28665ff4a2771f"],["/kiel-sw/commons-9b34c07374b4a0f9eee8.js","106320e7e06150a023376e38638ffbfc"],["/kiel-sw/index.html","d38ef0868cf5e1d8a51bec0a4ed5567d"],["/kiel-sw/offline-plugin-app-shell-fallback/index.html","095bf9a0fe866a70928684f0e952757b"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
