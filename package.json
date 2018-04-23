@@ -2,12 +2,15 @@
   "name": "kiel.knowit.no",
   "description": "Fagseminar side for Knowit",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Christian Peter <christian.peter@knowit.no>",
   "dependencies": {
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-manifest": "^1.0.16",
+    "gatsby-plugin-offline": "^1.0.15",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gh-pages": "^1.1.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-bem-helper": "^1.4.1",
     "react-helmet": "^5.2.0",
     "react-spring": "^3.1.0"
@@ -21,8 +24,9 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "predeploy": "NODE_ENV=production npm run build",
+    "deploy": "NODE_ENV=production gh-pages -d public",
+    "start": "gatsby develop"
   },
   "devDependencies": {
     "prettier": "^1.11.1"

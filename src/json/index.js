@@ -3,7 +3,7 @@ const viewmodel = {
   event: {
     date: '27. april - 29. april 2018',
     longDate: '27. april - 29. april 2018',
-    venue: 'Colorline Oslo-Kiel',
+    venue: 'Colorline Oslo - Kiel',
     city: 'Kiel',
     country: 'Tyskland',
     gmapsUrl:
@@ -18,21 +18,27 @@ const viewmodel = {
           title: 'Vi ankommer Kiel fergen',
         },
         {
-          time: '14:00-14:20',
+          time: '14:00 - 14:10',
           title: 'Plenumsforedrag',
           entries: [
             {
-              room: 'Show lounge',
+              room: 'Show lounge (Dekk 7)',
               slots: ['welcome'],
             },
           ],
         },
         {
-          time: '14:20-14:45',
-          title: 'Internmøte',
+          time: '14:10 - 14:40',
+          title: 'Plenumsforedrag',
+          entries: [
+            {
+              room: 'Show lounge (Dekk 7)',
+              slots: ['hanschristian'],
+            },
+          ],
         },
         {
-          time: '14:45-15:00',
+          time: '14:40 - 15:00',
           title: 'Pause',
           isBreak: true,
         },
@@ -41,22 +47,26 @@ const viewmodel = {
           title: 'Workshop',
           entries: [
             {
-              room: 'Parliament 🎥',
+              room: 'Parliament 🎥 (Dekk 12)',
               slots: ['secchapterws'],
             },
             {
-              room: 'Congress',
-              slots: ['nodemcuws', 'startupws', 'uuws'],
+              room: 'Congress (Dekk 12)',
+              slots: ['kubernetesws', 'uuws'],
             },
             {
-              room: 'Bundestag',
-              slots: ['kubernetesws', 'spotifyws'],
+              room: 'Bundestag (Dekk 12)',
+              slots: ['nodemcuws', 'spotifyws'],
             },
             {
-              room: 'Stortinget',
+              room: 'Stortinget (Dekk 12)',
               slots: ['legomindstormws'],
             },
           ],
+        },
+        {
+          time: '20:30',
+          title: 'Middag',
         },
       ],
     },
@@ -64,24 +74,32 @@ const viewmodel = {
       day: 'Lørdag 28. April',
       collections: [
         {
-          time: '14:00-16:00',
+          time: '14:00 - 14:45',
           title: 'Plenumsforedrag',
           entries: [
             {
-              room: 'Auditorium 🎥',
-              slots: [
-                'introday2',
-                'larslundby',
-                'libanon',
-                'hanschristian',
-                'gdpr',
-                'balance',
-              ],
+              room: 'Auditorium 🎥 (Dekk 12)',
+              slots: ['introday2', 'larslundby'],
             },
           ],
         },
         {
-          time: '16:00-16:45',
+          time: '14:45 - 15:00',
+          title: 'Pause',
+          isBreak: true,
+        },
+        {
+          time: '15:00 - 16:00',
+          title: 'Plenumsforedrag',
+          entries: [
+            {
+              room: 'Auditorium 🎥 (Dekk 12)',
+              slots: ['gdpr', 'libanon', 'balance'],
+            },
+          ],
+        },
+        {
+          time: '16:00 - 16:45',
           title: 'Pause',
           isBreak: true,
         },
@@ -90,25 +108,33 @@ const viewmodel = {
           title: 'Foredrag',
           entries: [
             {
-              room: 'Auditorium 🎥',
+              room: 'Auditorium 🎥 (Dekk 12)',
               slots: ['shakespeare'],
             },
             {
-              room: 'Parliament 🎥',
+              room: 'Parliament 🎥 (Dekk 12)',
               slots: ['bottom'],
             },
             {
-              room: 'Congress',
+              room: 'Congress 1 (Dekk 12)',
               slots: ['doorbell'],
             },
             {
-              room: 'Bundestag',
+              room: 'Congress 2 (Dekk 12)',
+              slots: ['origo'],
+            },
+            {
+              room: 'Congress 3 (Dekk 12)',
+              slots: ['authapi'],
+            },
+            {
+              room: 'Bundestag (Dekk 12)',
               slots: ['bootstrap'],
             },
           ],
         },
         {
-          time: '17:15-17:30',
+          time: '17:15 - 17:30',
           title: 'Pause',
           isBreak: true,
         },
@@ -117,101 +143,98 @@ const viewmodel = {
           title: 'Foredrag',
           entries: [
             {
-              room: 'Auditorium 🎥',
+              room: 'Auditorium 🎥 (Dekk 12)',
               slots: ['deeplearning'],
             },
             {
-              room: 'Parliament 🎥',
+              room: 'Parliament 🎥 (Dekk 12)',
               slots: ['crypto'],
             },
             {
-              room: 'Congress',
+              room: 'Congress 1 (Dekk 12)',
               slots: ['eventkafka'],
             },
             {
-              room: 'Bundestag',
+              room: 'Congress 2 (Dekk 12)',
+              slots: ['designprinsipper'],
+            },
+            {
+              room: 'Congress 3 (Dekk 12)',
               slots: ['asyncawait'],
             },
-          ],
-        },
-        {
-          time: '18:00-18:15',
-          title: 'Pause',
-          isBreak: true,
-        },
-        {
-          time: '18:15 - 18:45',
-          title: 'Foredrag',
-          entries: [
             {
-              room: 'Auditorium 🎥',
-              slots: ['alexaskills'],
-            },
-            {
-              room: 'Parliament 🎥',
-              slots: ['origo'],
-            },
-            {
-              room: 'Congress',
-              slots: ['authapi'],
-            },
-            {
-              room: 'Bundestag',
+              room: 'Bundestag (Dekk 12)',
               slots: ['youtube'],
             },
           ],
         },
         {
-          time: '18:45-19:00',
+          time: '18:00 - 18:15',
           title: 'Pause',
           isBreak: true,
         },
         {
-          time: '19.00 - 19:15',
+          time: '18:15 - 18:30',
           title: 'Lyntaler',
           entries: [
             {
-              room: 'Auditorium 🎥',
-              slots: ['serverlessazure'],
-            },
-            {
-              room: 'Parliament 🎥',
-              slots: ['thegathering'],
-            },
-            {
-              room: 'Congress',
+              room: 'Auditorium 🎥 (Dekk 12)',
               slots: ['consumerdrivencontracts'],
             },
             {
-              room: 'Bundestag',
-              slots: ['oslokey'],
-            },
-          ],
-        },
-        {
-          time: '19:15 - 19:30',
-          title: 'Lyntaler',
-          entries: [
-            {
-              room: 'Auditorium 🎥',
-              slots: ['astronaut'],
-            },
-            {
-              room: 'Parliament 🎥',
+              room: 'Parliament 🎥 (Dekk 12)',
               slots: ['clibank'],
             },
             {
-              room: 'Congress',
-              slots: ['mats3'],
+              room: 'Congress 1 (Dekk 12)',
+              slots: ['thegathering'],
             },
             {
-              room: 'Bundestag',
+              room: 'Congress 2 (Dekk 12)',
+              slots: ['selgerne'],
+            },
+            {
+              room: 'Congress 3 (Dekk 12)',
+              slots: ['serverlessazure'],
+            },
+            {
+              room: 'Bundestag (Dekk 12)',
               slots: ['oslokey_react_native'],
             },
           ],
         },
         {
-          time: '20:00',
+          time: '18:30 - 18:45',
+          title: 'Lyntaler (Dekk 12)',
+          entries: [
+            {
+              room: 'Auditorium 🎥 (Dekk 12)',
+              slots: ['openspaceknowitlabs'],
+            },
+            {
+              room: 'Parliament 🎥 (Dekk 12)',
+              slots: ['alexaskills'],
+            },
+            {
+              room: 'Congress 1 (Dekk 12)',
+              slots: ['mats3'],
+            },
+            {
+              room: 'Congress 2 (Dekk 12)',
+              slots: ['prosjektprodukt'],
+            },
+            {
+              room: 'Congress 3 (Dekk 12)',
+              slots: ['arkit'],
+            },
+            {
+              room: 'Bundestag (Dekk 12)',
+              slots: ['oslokey'],
+            },
+          ],
+        },
+        {
+          time: '20:30',
           title: 'Middag',
         },
       ],
@@ -268,7 +291,7 @@ const viewmodel = {
           bio:
             "Johannes har en mastergrad i 'Informatikk: Design, bruk og interaksjon' men foretrekker å programmere og da helst front-end. Han har to bachelorgrader: den første i 'Kultur og kommunikasjon' fra Universitetet i Oslo og den andre i 'Digital medieproduksjon' fra Høgskolen i Østfold. Dette har gitt et godt grunnlag for å forstå informasjonsflyt, både mellommenneskelig men også mellom menneske og maskin. Johannes har spilt mange år i band med mer enn hundre pub-konsert rundt i det meste av Norge. Han har også vært med på flere teateroppsetninger og har med dette opparbeidet seg god erfaring i å prestere foran store forsamlinger.",
           email: 'johannes.akse@knowit.no',
-          pic: 'johannes.akse.jpg',
+          pic: 'johannesakse.jpg',
         },
       ],
       title: 'Async Await - Make asynchronous look synchronous',
@@ -308,19 +331,20 @@ const viewmodel = {
       description:
         'Is it possible to learn personal information about an author based on their writing style? The field of author profiling addresses this specific problem. It belongs to the field of Natural Language Processing and authorship analysis, and aims to classify personal traits of authors, such as gender and age, based on their writing style. This presentation will show an approach to predicting the gender of tweet authors using a combination of neural network architectures and textual features.',
     },
-    astronaut: {
+    openspaceknowitlabs: {
       pending: false,
       speakers: [
         {
-          name: 'Thomas Andersen',
-          bio: '',
-          email: 'thomas.andersen@knowit.no',
+          name: 'Alina Kay',
+          bio: 'Alina er utdannet journalist fra University of Westminster i London og har en stor lidenskap for media og kommunikasjon. Hun har erfaring med alt fra tekstproduksjon til film og fotografi, og hun har tidligere jobbet i Google London som eventkoordinator. Alina er meget organisert, detaljorientert og kreativ. I Knowit Solutions jobber hun i hovedsak med eventer, sosiale medier og tekstproduksjon.',
+          email: 'alina.kay@knowit.no',
+          pic: 'alina.kay.jpg',
         },
       ],
-      title: 'Fra backend programmerer til astronaut frontend universet',
+      title: 'Open Space Knowitlabs',
       type: 'Talk',
       description:
-        "Etter mange år i bransjen, og i en tid hvor å mestre MVC pattern og integrasjon med en database kunne gjøre at du kunne kalle deg en 'fullstack utvikler'. De siste årene har frontend teknologiene eksplodert i intet mindre enn noe som kan kalles et Big Bang. React, ELM, Angular, Webpack, Gulp, Node, NPM er alle teknologier og buzzwords som er overveldende dersom en ikke har fulgt med i timen underveis. Spørsmålet er hvordan skal en med erfaring som ikke strekker seg lenger enn da JQuery ble poppis forholde seg til alle disse nye teknologiene, og ikke minst mestre de....",
+        "Open Space med tema Knowitlabs",
     },
     shakespeare: {
       pending: false,
@@ -375,9 +399,9 @@ const viewmodel = {
       speakers: [
         {
           name: 'Trygve Laugstøl',
-          bio: 'Bio kommer',
+          bio: 'Trygve Laugstøl er tidligere Java-utvikler som etter 15 års som ble mere interessert i ting som gjør noe og byttet til å være konsulent for petter smart-folk som vil lage dingser.',
           email: 'trygvis@trygvis.io',
-          pic: '',
+          pic: 'trygvis.jpg',
         },
       ],
       title: 'Oslo-nøkkelen',
@@ -484,7 +508,7 @@ const viewmodel = {
       pending: false,
       speakers: [
         {
-          name: 'S. Christoffer Eliesen',
+          name: 'Christoffer Eliesen',
           bio:
             'Frontendutvikler på TRiO for Beredskapsetaten og leder av Creative Crew der vi prøver å vinne internett. 😁💃✨',
           email: 'christoffer.eliesen@knowit.no',
@@ -588,7 +612,7 @@ const viewmodel = {
           pic: 'jhg.jpg',
         },
       ],
-      title: 'Intro dag to',
+      title: 'Innledning, litt om fag og internmøte',
       type: 'Talk',
     },
     hanschristian: {
@@ -597,27 +621,32 @@ const viewmodel = {
         {
           name: 'Hans Christian Brodwall Nielsen',
           bio:
-            'Hans Christian er en av våre mest erfarne konsulenter med lang erfaring og nøkkelkompetanse innenfor programmeringsspråk, databasesystemer, objektorientert og modellbasert systemutvikling. Han har også ledererfaring, både som utviklingssjef, avdelingsleder og prosjektleder. Hans Christian er meget utadvendt, systematisk og løsningsorientert, og oppnår alltid høy tillit hos kunder samtidig som han bidrar til positiv stemning i prosjektene.',
+            'Hans Chr har kodet i mange år. Faktisk lenger enn mange konsulenter i Knowit har levd. Han har prøvd seg på andre ting, men det eneste han liker og føler at han mestrer er koding. Målet hans er å fortsette å kode til han går av med pensjon.',
           email: 'hcn@knowit.no',
           pic: 'hcn.png',
         },
       ],
-      title: 'Programmering gjennom tidene',
+      title:
+        'Syvende fedre i huset – om programmering og verktøyutvikling i gamle dager',
       type: 'Talk',
-      description: 'Beskrivelse kommer',
+      description:
+        'Gamle folk liker å snakke om gamle dager, og der er jeg ikke noe unntak. Jeg vil snakke om en serie av firmaer som mange av oss i Knowit har vært med i. Vi var utviklere og brukere av et verktøy som var stort i Norge og som også hadde en viss utbredelse i andre land. Mange av oss har vært med både opp og ned - opp med stigende aksjekurser og ned når alt gikk til helvete.',
     },
     gdpr: {
       pending: false,
       speakers: [
         {
-          name: 'Navn kommer',
-          bio: 'Bio kommer',
-          email: '?',
+          name: 'Joakim Lehn',
+          bio:
+            'Joakim er en ivrig backend utvikler med fokus på faglig utvikling, arkitekturbeslutninger er noe Joakim trives godt med og som han har opparbeidet seg erfaring med fra både prosjekter samt Knowits arkitektskole. Forutenom utvikling har Joakim erfaring både som teamlead og scrum master fra flere prosjekter. Som teamlead er fokuset bygging av god teamkultur og smidig metodikk for å legge grunnstene for effektiv utvikling og en meningsfylt hverdag. Som person er Joakim positiv, utadvent, ambisiøs og svært målbevist. Han jobber strukturert, effektivt og blir motivert av nye krevende utfordringer.',
+          pic: 'joakim.lehn.jpg',
+          email: 'joakim.lehn@knowit.no',
         },
       ],
-      title: 'GDPR',
+      title: 'GDPR - En praktisk introduksjon for utviklere',
       type: 'Talk',
-      description: 'Beskrivelse kommer',
+      description:
+        'I denne lyntalen kommer jeg til å introdusere de mest fundamentale artiklene fra Europas nye personvernlov - GDPR. Jeg kommer til å forklare hva disse artiklene egentlig betyr, samt presentere noen retningslinjer for å sørge for at systemet er kompatibelt med det nye lovverket. Etter denne lyntalen vil du ha kjennskap om overflaten til GDPR, og ha en ide om hva dette betyr i praksis for deg som utvikler.',
     },
     libanon: {
       pending: false,
@@ -629,9 +658,10 @@ const viewmodel = {
           pic: 'ea.jpg',
         },
       ],
-      title: 'Libanon',
+      title: 'Det libanesiske folkeregisteret …. eller en annen røverhistorie',
       type: 'Talk',
-      description: 'Beskrivelse kommer',
+      description:
+        'Når noe bare dukker opp og synes å være for godt til å være sant, hva gjør man da? Om Nigeriabrev, komplett meningsløse politiske strukturer, korrupsjon, attentater og naive nordmenn som vil gjøre verden til et såkalt bedre sted å leve. Et innblikk i en av de mer eksotiske delene av Eriks CV.',
     },
     larslundby: {
       pending: false,
@@ -644,31 +674,98 @@ const viewmodel = {
           pic: 'llu.jpg',
         },
       ],
-      title:
-        'Innslag fra Lars Lundby om visualisering av kompetansekartlegging',
+      title: 'Visualisering og resultater fra kompetansekartlegging',
       type: 'Talk',
-      description: 'Beskrivelse kommer',
+      description:
+        'Lars har lekt med visualisering av resultatene fra kompetansekartleggingingen i Objectnet. Og mener vel noe også, kjenner vi han rett...',
+    },
+    designprinsipper: {
+      pending: false,
+      speakers: [
+        {
+          name: 'Noor Knutsen',
+          bio:
+            'Noor kommer fra kysten av Trøndelag, og kjennetegnes med bred og variert kompetanse. I 2009 ble han tildelt en studieplass innen Visuell Kommunikasjon ved Høgskolen i Sørøst Norge. og gjennomførte et år av bachelorgraden i utlandet, ved University of Wollongong i Australia. Etter at han ble uteksaminert i 2012, har han jobbet som profesjonell designer på en rekke små og store prosjekter. For Noor handler design om å forenkle, og prioritere det som er viktig for sluttbrukeren. Derfor er det avgjørende med en god strategi i forkant av et prosjekt, og Noor verdsetter en grundig prosess i samarbeid med kunden. Noor jobber med design for alle typer digitale flater, og behersker de fleste ledende software for utarbeidelse av grafikk.',
+          email: 'noor.knutsen@knowit.no',
+          pic: 'noor.jpg',
+        },
+      ],
+      title: 'Designprinsipper',
+      type: 'Talk',
+      description:
+        'En gjennomgang av prisnsipper som preger en designprosess. Foredraget er spesielt laget for utviklere som ønsker en bedre forståelse av design som innovasjonsmetode. Her lærer du å løfte kvaliteten på et produkt med enkle grep.',
+    },
+    selgerne: {
+      pending: false,
+      speakers: [
+        {
+          name: 'Erik Nylund',
+          bio:
+            'Experienced Business Development Executive currently working with clients to use digital technologies to change business models and provide new revenue and value-producing opportunities. Target areas are eg. Government, Mobility and Real Estate. Demonstrated history of working in the information services industry. Skilled in Executive Management, Business Development, Strategic Planning, Customer Development and Board Memberships.',
+          email: 'etn@knowit.no',
+          pic: 'nylund.jpg',
+        },
+      ],
+      title:
+        'The Far Side  - hvordan vi avdekker det ikke alle vet eller ikke alle ser i markedet',
+      type: 'Talk',
+      description:
+        'Den sanne historien om hvordan og hvorfor, og hva du kan bidra med.',
+    },
+    prosjektprodukt: {
+      pending: false,
+      speakers: [
+        {
+          name: 'Rolf Knutsen',
+          bio:
+            'Rolf har jobbet som prosjektleder og ledelse av oppdrag og team siden 1999. Han er sertifisert Senior Prosjektleder fra International Project Management Associaton (IPMA) og PMP. Han har erfaring fra en rekke ulike utviklingsprosjekter. Erfaringen omfatter ledelse av prosjekter som inkluderer systemutvikling (SW og HW), integrasjon og verifikasjon i større nasjonale og internasjonale utviklingsprosjekter, samt IT-prosjekter innen offentlig sektor. \n \nRolf er svært interessert i utviklingsprosesser og spesielt moderne, smidige metoder. Disse fokuserer på produktutvikling og muliggjøring av rask og effektiv leveranse av verdi. Rolf har jobbet mye direkte med team og i smidige team og utvikling av disse, blant annet som agile coach. Rolf har også mye erfaring med formelle prosjektstyringsrammeverk og er flink til å finne den riktige balansen mellom nødvendig formalisme og smidig utvikling. \n\n Rolf er en aktiv og initiativrik person. Han har et høyt engasjement i oppdragene og en god evne til å skape godt samarbeidsklima og målrettet arbeid både i teamene og ikke minst i samarbeidet med kundene. Han er åpen, tydelig og ryddig, og trives like godt med å jobbe mot ledelse og styringsgruppe som internt i prosjektene med teamene.',
+          email: 'rhk@knowit.no',
+          pic: 'rhk.jpg',
+        },
+      ],
+      title:
+        'Prosjekt eller produktutvikling og hvorfor det spiller noen rolle.',
+      type: 'Talk',
+      description:
+        'Tidligere var alle aktivitetene våre organisert som prosjekter mens fokus nå stadig oftere er produktutvikling. Hva har skjedd med verden, og hva innebærer dette skiftet for oss i praksis?',
+    },
+    arkit: {
+      pending: false,
+      speakers: [
+        {
+          name: 'Arve Seljebu',
+          bio:
+            'Lidenskapelig interessert i teknologi, fra elektronikk til programmering. Allsidig bakgrunn med lektorutdannelse, master i fysikk, fagbrev i elektronikk og halvårstudium i friluftsliv. Liker utfordringer og er kjapp til å lære nye teknologier. Glad i kunnskapsformidling.',
+          email: 'arve.seljebu@knowit.no',
+          pic: 'arvesel.jpg',
+        },
+      ],
+      title:
+        'Er det mulig å kapre oppdrag innen AR som nyansatt uten erfaring?',
+      type: 'Talk',
+      description:
+        'Som nyansatt i Trondheim og med bakgrunn som lektor i videregående skole er jeg ikke i toppen av bunken. Kan kundens holdning til konsulenter uten erfaring påvirkes i intervjurunden med demo-arbeid? Hvordan gikk det når jeg prøvde å lære meg iOS-utvikling og ARKit på en uke? Hva kan vi bruke ARKit til?',
     },
     nodemcuws: {
       pending: false,
       speakers: [
         {
           name: 'Trygve Laugstøl',
-          bio: 'Bio kommer',
+          bio: 'Trygve Laugstøl er tidligere Java-utvikler som etter 15 års som ble mere interessert i ting som gjør noe og byttet til å være konsulent for petter smart-folk som vil lage dingser.',
           email: 'trygvis@trygvis.io',
-          pic: '',
+          pic: 'trygvis.jpg',
         },
       ],
-      title: 'Internet of Things: NodeMCU',
+      title: 'Internet of Things med NodeMCU',
       type: 'Workshop',
       description:
-        'NodeMCU/IoT: NodeMCU er en liten mikrokontroller med wifi som støtter TCP/IP, MQTT og andre IoT-/internett-protokoller samtidig som den er en flott mikrokontroller for å lage dingser. Workshopen får nok samme struktur som Arduino-workshopen men mere fokus på å lage IoT-ting enn elektronikken. Jeg ville nok brukt Arduino-påbygget for å gjøre det så lett som mulig for folk å skrive koden mens man er på båten.',
+        'I denne workshopen så vil lage en liten (og ekte, ikke raspberry pi-basert!) IoT-dings. Under workshopen vil vi koble opp følere og få ting til å bevege seg samtidig som vi er koblet til en sentral. Mens vi gjør dette vil det bli illustrert alternative teknologier og arkitekturer for kommunikasjon og sikkerhet. Siste tema i workshopen er hvordan man skal gå frem for å lage sin egen dings og hva man må tenke på. Temaer som dekkes: Wifi, Bluetotoh, MQTT, HTTP, mikrokontrollere, utviklingsprosess for dingser.',
     },
     secchapterws: {
       pending: false,
       speakers: [
         {
-          name: 'S. Christoffer Eliesen',
+          name: 'Christoffer Eliesen',
           bio:
             'Frontendutvikler på TRiO for Beredskapsetaten og leder av Creative Crew der vi prøver å vinne internett. 😁💃✨',
           email: 'christoffer.eliesen@knowit.no',
@@ -776,8 +873,9 @@ const viewmodel = {
       speakers: [
         {
           name: 'Mina Ravem',
-          bio: 'Bio kommer',
-          pic: '',
+          bio:
+            'Mina har en mastergrad I Human centred systems aka user experience. Spesialiseringen hennes ligger i brukerinnsikt, både i hvordan man tilegner seg og bruker innsikten for å skape gode brukeropplevelser.',
+          pic: 'mina.ravem.jpg',
           email: 'mina.ravem@knowit.no',
         },
       ],

@@ -2,6 +2,10 @@
   & > .c-button {
     margin-right: 0.4rem;
   }
+
+  &--schedule-days > .c-button {
+    font-size: 1.2rem;
+  }
 }
 
 .c-button {
@@ -45,6 +49,7 @@
 @media (--medium-viewport) {
   .c-button-group--schedule-days > .c-button {
     padding: 1rem 1rem;
+    font-size: 0.8rem;
   }
 
   .c-button-group {
@@ -57,5 +62,7 @@
 @media (--small-viewport) {
   .c-button-group--schedule-days > .c-button {
     padding: 1rem 0.3rem;
+    font-size: 0.8rem;
+    margin: 0;
   }
 }

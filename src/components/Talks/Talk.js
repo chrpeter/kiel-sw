@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { talksClasses } from './'
 import viewmodel from '../../json'
 import TalkDescription from './TalkDescription'
-import TalkSpeaker from './TalkSpeaker';
+import TalkSpeaker from './TalkSpeaker'
 
 class Talk extends React.Component {
   constructor() {
@@ -24,7 +24,13 @@ class Talk extends React.Component {
     return (
       <div {...talksClasses('talk')}>
         <div {...talksClasses('talk-speakers')}>
-          {talk.speakers && talk.speakers.length !== 0 ? <TalkSpeaker speaker={talk.speakers[0]} numberOfSpeakers={talk.speakers.length} talkId={talkId}/> : null}
+          {talk.speakers && talk.speakers.length !== 0 ? (
+            <TalkSpeaker
+              speaker={talk.speakers[0]}
+              numberOfSpeakers={talk.speakers.length}
+              talkId={talkId}
+            />
+          ) : null}
         </div>
 
         <div {...talksClasses('talk-info')}>

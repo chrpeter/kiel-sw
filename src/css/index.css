@@ -56,6 +56,24 @@ svg {
   border: none;
 }
 
+.c-schedule-transition-enter {
+  opacity: 0.01;
+}
+
+.c-schedule-transition-enter.c-schedule-transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.c-schedule-transition-leave {
+  opacity: 1;
+}
+
+.c-schedule-transition-leave.c-schedule-transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
 @media (--medium-viewport) {
   .google-maps-content {
     width: 60%;

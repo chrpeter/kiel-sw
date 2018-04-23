@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import BEMHelper from 'react-bem-helper'
 import viewmodel from '../json'
-import Speakers from '../components/Speakers';
+import Speakers from '../components/Speakers'
 import ButtonGroup from '../components/ButtonGroup'
 
 const classes = new BEMHelper({
@@ -15,10 +15,7 @@ const buttonClasses = new BEMHelper({
   prefix: 'c-',
 })
 
-const SpeakersPage = (props) => {
-  console.log(props)
-  const hash = props.location.hash;
-  console.log("TALKS", viewmodel.talks)
+const SpeakersPage = props => {
   return (
     <div {...classes('', 'speakers')}>
       <h1>Talere</h1>
@@ -27,15 +24,16 @@ const SpeakersPage = (props) => {
           Forside
         </Link>
         <Link {...buttonClasses('', 'white')} to="/schedule/">
-          Skjema
+          Program
         </Link>
       </ButtonGroup>
       <div {...classes('container')}>
-        {Object.keys(viewmodel.talks).map(key => <Speakers key={key} talk={viewmodel.talks[key]} talkKey={key}/>)}
+        {Object.keys(viewmodel.talks).map(key => (
+          <Speakers key={key} talk={viewmodel.talks[key]} talkKey={key} />
+        ))}
       </div>
-
     </div>
   )
-};
+}
 
 export default SpeakersPage

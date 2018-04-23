@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
 import { talksClasses } from './'
-import Cross from '../Icons/Cross';
+import Cross from '../Icons/Cross'
 
-const DESCRIPTION_LENGTH = 100;
+const DESCRIPTION_LENGTH = 100
 
 const shortDescription = description => {
   if (description.length > DESCRIPTION_LENGTH) {
@@ -19,16 +19,15 @@ const TalkDescription = ({
   description,
 }) => {
   if (description.length < DESCRIPTION_LENGTH + 1) {
-    return (<span {...talksClasses('talk-description')}>
-      {description}
-    </span>
-  );
+    return <span {...talksClasses('talk-description')}>{description}</span>
   }
   if (showDescription) {
     return (
       <span {...talksClasses('talk-description')}>
         {description}
-        <button className="un-button" onClick={toggleShowDescription}><Cross /></button>
+        <button className="un-button" onClick={toggleShowDescription}>
+          <Cross />
+        </button>
       </span>
     )
   }
