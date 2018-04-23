@@ -27,10 +27,6 @@ const TemplateWrapper = ({ children }) => {
         ]}
       >
         <link
-          href="https://fonts.googleapis.com/css?family=Raleway"
-          rel="stylesheet"
-        />
-        <link
           rel="shortcut icon"
           type="image/png"
           href="./static/logo_kielferga_dark.png"
@@ -47,7 +43,7 @@ const TemplateWrapper = ({ children }) => {
         <iframe
           className="google-maps"
           src={viewmodel.event.gmapsUrl}
-          frameborder="0"
+          frameBorder="0"
         />
       </div>
     </div>
