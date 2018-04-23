@@ -15,13 +15,13 @@ class TalkSpeaker extends React.Component {
   onImageLoadError(){
     this.setState({imageError: true});
   }
-  
+
   render() {
     const { speaker, numberOfSpeakers, talkId } = this.props;
     return (
       <div {...talksClasses('speaker')}>
         <span {...talksClasses('speaker-image')}>
-          {speaker.pic ? (
+          {speaker.pic && !this.state.imageError ? (
             <img
               title={`Image of ${speaker.name}`}
               alt={`Image of ${speaker.name}`}
