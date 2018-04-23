@@ -5,9 +5,14 @@
 @import './talks.css';
 @import './speakers.css';
 
+@font-face {
+  font-family: 'RegularRaleway';
+  src: url('/public/static/Raleway-Regular');
+}
+
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'RegularRaleway', sans-serif;
 }
 
 

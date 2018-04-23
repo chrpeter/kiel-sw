@@ -4,24 +4,38 @@ import Link, { withPrefix } from 'gatsby-link'
 import { speakersClass } from './'
 import Person from '../Icons/Person'
 
-const Speaker = ({ speaker }) => {
-  return (
-    <div {...speakersClass('speaker')}>
-      <span key="speaker-img" {...speakersClass('speaker-image')}>
-        {speaker.pic ? (
-          <img
-            title={`Image of ${speaker.name}`}
-            alt={`Image of ${speaker.name}`}
-            src={withPrefix(`/static/pics/${speaker.pic}`)}
-          />
-        ) : (
-          <Person />
-        )}
-      </span>
-      <h3 key="speaker-name">{speaker.name}</h3>
-      <p key="speaker-bio">{speaker.bio}</p>
-    </div>
-  )
+class Speaker extends React.Component {
+  constructor() {
+    super();
+    this.state = { imageError: false };
+    this.onImageLoadError = this.onImageLoadError.bind(this);
+  }
+
+  onImageLoadError(){
+    this.setState({imageError: true});
+  }
+
+  render() {
+    const { speaker } = this.props;
+    return (
+      <div {...speakersClass('speaker')}>
+        <span key="speaker-img" {...speakersClass('speaker-image')}>
+          {speaker.pic && !this.state.imageError ? (
+            <img
+              title={`Image of ${speaker.name}`}
+              alt={`Image of ${speaker.name}`}
+              src={withPrefix(`/static/pics/${speaker.pic}`)}
+              onError={this.onImageLoadError}
+            />
+          ) : (
+            <Person />
+          )}
+        </span>
+        <h3 key="speaker-name">{speaker.name}</h3>
+        <p key="speaker-bio">{speaker.bio}</p>
+      </div>
+    )
+  }
 }
 
 Speaker.propTypes = {
