@@ -1,0 +1,90 @@
+.c-talks {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+
+  &__type {
+    color: var(--knowit-green);
+    font-size: 0.9rem;
+  }
+
+  &__room {
+    font-size: 1.2rem;
+    float: right;
+    color: var(--dark-blue);
+  }
+
+  &__talk {
+    margin-top: 3rem;
+    display: flex;
+  }
+
+  &__talk-info {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  &__talk-description {
+    margin-top: 0.2rem;
+    display: inline-block;
+
+    & button {
+      margin: 1rem auto;
+      color: black;
+
+      &:focus,
+      &:hover {
+        color: var(--knowit-green);
+      }
+    }
+  }
+  &__talk-speakers {
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+
+    & img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    & svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__speaker-image {
+    display: inline-block;;
+  }
+
+  &__speaker-name {
+    font-size: 0.8rem;
+    display: block;
+    font-weight: bold;
+  }
+}
+
+.c-talks__container {
+  flex: 1 30%;
+  margin-top: 0.2rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid var(--gray-1);
+}
+
+@media (--medium-viewport) {
+  .c-talks {
+    width: 100%;
+
+    &__container {
+      flex: 1 100%;
+      padding-right: 0;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

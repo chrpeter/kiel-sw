@@ -1,0 +1,13 @@
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public/*
+!/public/static/pics
+!/public/static/logo_kielferga_dark.png
+!/public/static/logo_kielferga.png
+!/public/CNAME
+
+.DS_Store
